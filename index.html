@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Budget app</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,300;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="budzet">
+          <div class="totalniBudzet">
+            <p>Доступан будџет у Јануару 2021:</p>
+            <h2 id="budzet" class="trenutniBudzet">0</h2>
+          </div>
+          <div class="kalkulacija">
+            <div class="prihod">
+              <p>Приход</p>
+              <p id="samoPrihod">0</p>
+            </div>
+            <div class="rashod">
+              <p>Расход</p>
+              <p id="samoRashod">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="indikatorNovca">* Сав приказан новац је у РСД валути</div>
+      </div>
+      <div>
+        <form id="forma" onsubmit="return primiUnos(event)">
+          <select class="small" id="tip" name="tip" required>
+            <option value="" selected disabled>-</option>
+            <option value="prihod">Приход</option>
+            <option value="rashod">Расход</option>
+          </select>
+          <input class="big" type="text" name="opis" placeholder="Опис" required />
+          <input class="small" type="number" name="iznos" placeholder="Износ" min="1" required />
+
+          <button class="submit" type="submit" title="Потврди">
+            <img src="./assets/img/checkmark.png" />
+          </button>
+        </form>
+
+        <div class="tabele">
+          <div class="tabelaWrapper prihodTabela">
+            <h2>Приходи</h2>
+            <ul id="prihodi">
+            </ul>
+          </div>
+          <div class="tabelaWrapper rashodTabela">
+            <h2>Расходи</h2>
+            <ul id="rashodi">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/index.js"></script>
+  </body>
+</html>

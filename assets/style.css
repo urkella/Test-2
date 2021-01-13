@@ -1,0 +1,198 @@
+body {
+  font-family: "Livvic", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: relative;
+  padding: 48px 0 60px;
+  background: #0f0c29;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.wrapper {
+}
+
+.budzet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.totalniBudzet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 34px;
+}
+
+.totalniBudzet p {
+  color: #fff;
+  margin: 0 0 12px;
+}
+
+.trenutniBudzet {
+  font-size: 42px;
+  line-height: 1;
+  color: #fff;
+  margin: 0;
+}
+
+.kalkulacija {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.prihod,
+.rashod {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 340px;
+  padding: 12px;
+  border-radius: 2px;
+}
+
+.prihod {
+  margin-bottom: 12px;
+  background: #1abc9c;
+}
+
+.rashod {
+  background: #d3163b;
+}
+
+.prihod p,
+.rashod p {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 0;
+}
+
+.rashodProcenat {
+  background: #e05b75;
+  font-size: 12px;
+  line-height: 1;
+  padding: 4px;
+  margin-left: 8px !important;
+  border-radius: 2px;
+}
+
+.indikatorNovca {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 14px;
+  color: #b2b2b2;
+}
+
+#forma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0;
+  background: #f1f1f1;
+}
+
+#forma input,
+#forma select {
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #b2b2b2;
+  box-shadow: none;
+  border-radius: 2px;
+}
+
+#forma select {
+  padding: 11px 12px 12px;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)
+    no-repeat right #fff;
+  background-size: 12px;
+  background-position: right 12px center;
+  -webkit-appearance: none;
+}
+
+.big {
+  width: 350px;
+  margin: 0 12px;
+}
+
+.small {
+  width: 110px;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: 0;
+}
+
+.tabele {
+  display: grid;
+  align-items: center;
+  grid-gap: 48px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: 48px auto;
+}
+
+.tabelaWrapper {
+}
+
+.tabelaWrapper h2 {
+  margin: 0 0 18px;
+  font-weight: 500;
+}
+
+.tabela {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.tabela:last-child {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.tabela p {
+  margin: 0;
+}
+
+.prihodTabela h2 {
+  color: #1abc9c;
+}
+
+.rashodTabela h2 {
+  color: #d3163b;
+}
+
+.prihodTabela .tabela p:nth-child(2) {
+  color: #1abc9c;
+}
+
+.rashodTabela .tabela p:nth-child(2) {
+  color: #d3163b;
+}
